@@ -1,0 +1,26 @@
+{
+    "name": "zig-run",
+    "version": "0.0.1",
+    "publisher": "Sinon",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "icon": "https://vortan.dev/upload/script/icon.png",
+    "scripts": {
+        "build": "tsc"
+    },
+    "activationEvents": [
+        "onCommand:extension.buildAndRunZigProgram"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [{
+            "command": "extension.buildAndRunZigProgram",
+            "title": "Build and Run Zig Program"
+        }]
+    },
+    "devDependencies": {
+        "@types/node": "^14.0.0",
+        "typescript": "^4.0.0"
+    }
+}
